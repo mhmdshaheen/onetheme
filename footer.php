@@ -53,6 +53,14 @@ if ( ! $hide_footer ) {
                 ?>
             </div>
         </div>
+        <script>
+              jQuery(document).ready(function(){                
+                jQuery(window).load(function() {
+                   jQuery('.careertuners_loader_outer').hide();
+                   jQuery('body').removeClass('body_overflow');
+                });
+              });
+        </script>
         <!-- .site-info -->
 
     </footer><!-- #colophon -->
@@ -67,9 +75,9 @@ do_action( 'onepress_site_end' );
 ?>
 </div><!-- #page -->
 
-<?php do_action( 'onepress_after_site_end' ); ?>
-
 <?php wp_footer(); ?>
 
 </body>
 </html>
+
+

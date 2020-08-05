@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="content" class="site-content">
+	<!--div id="content" class="site-content">
 		<main id="main" class="site-main" role="main">
             <?php
 
@@ -20,15 +20,7 @@ get_header(); ?>
                 ) );
 
 				foreach ( $sections as $section ){
-					/**
-                     * Load section if active
-                     *
-					 * @since 2.1.1
-					 */
-				    if ( Onepress_Config::is_section_active( $section ) ) {
-					    onepress_load_section( $section );
-                    }
-
+                    onepress_load_section( $section );
 				}
 
 			} else {
@@ -38,7 +30,9 @@ get_header(); ?>
             do_action( 'onepress_frontpage_after_section_parts' );
 
 			?>
-		</main><!-- #main -->
-	</div><!-- #content -->
+		</main>
+	</div--><!-- #content -->
+
+	<?php the_content(''); ?>
 
 <?php get_footer(); ?>

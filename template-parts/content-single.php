@@ -38,9 +38,9 @@
 		?>
 	</div><!-- .entry-content -->
     <?php if ( get_theme_mod( 'single_meta', 1 ) ) { ?>
-
-    <?php onepress_entry_footer(); ?>
-
+	<footer class="entry-footer">
+		<?php  onepress_entry_footer(); ?>
+	</footer><!-- .entry-footer -->
     <?php } ?>
 </article><!-- #post-## -->
 

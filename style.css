@@ -3,8 +3,8 @@ Theme Name: OnePress
 Theme URI: https://www.famethemes.com/themes/onepress/
 Author: FameThemes
 Author URI: http://www.famethemes.com
-Description: OnePress is an outstanding creative and flexible WordPress one page theme well suited for business website, portfolio, digital agency, product showcase, freelancers and everyone else who appreciate good design. The theme overall is an elegant and classic one, a fine example of Bootstrap 4 WordPress theme which compatibility with latest version of WooCommerce. (Live preview : https://demos.famethemes.com/onepress)
-Version: 2.2.4
+Description: OnePress is an outstanding creative and flexible WordPress one page theme well suited for business website, portfolio, digital agency, product showcase, freelancers and everyone else who appreciate good design. The theme overall is an elegant and classic one, a fine example of Bootstrap 4 WordPress theme which compatibility with latest version of WooCommerce. (Live preview : http://www.famethemes.com/preview/?theme=OnePress)
+Version: 2.0.9
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: onepress
@@ -62,7 +62,7 @@ html {
 @media (max-width: 767px) {
   html {
     font-size: 14px;
-  }
+  } 
 }
 
 body {
@@ -374,8 +374,7 @@ fieldset {
   border: 1px solid #e9e9e9;
 }
 
-input[type="reset"], input[type="submit"], input[type="submit"],
-.pirate-forms-submit-button, .contact-form div.wpforms-container-full .wpforms-form .wpforms-submit {
+input[type="reset"], input[type="submit"], input[type="submit"], .pirate-forms-submit-button {
   cursor: pointer;
   background: #03c4eb;
   border: none;
@@ -393,11 +392,9 @@ input[type="reset"], input[type="submit"], input[type="submit"],
   font-weight: 600;
   font-size: 13px;
 }
-input[type="reset"]:hover, input[type="submit"]:hover, input[type="submit"]:hover,
-.pirate-forms-submit-button:hover, .contact-form div.wpforms-container-full .wpforms-form .wpforms-submit:hover {
+input[type="reset"]:hover, input[type="submit"]:hover, input[type="submit"]:hover, .pirate-forms-submit-button:hover {
   opacity: 0.8;
   background: #03c4eb;
-  border: none;
 }
 
 input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover,
@@ -419,7 +416,7 @@ select {
   padding: 10px;
 }
 
-textarea:not(.editor-post-title__input),
+textarea,
 input[type="date"],
 input[type="datetime"],
 input[type="datetime-local"],
@@ -452,7 +449,7 @@ input[type="week"] {
   box-sizing: border-box;
   color: #000000;
 }
-textarea:not(.editor-post-title__input):focus,
+textarea:focus,
 input[type="date"]:focus,
 input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
@@ -606,11 +603,6 @@ h6, p, ul, ol, dl, blockquote, pre {
   word-wrap: break-word;
 }
 
-body.mce-content-body {
-  margin: 20px 40px;
-  font-size: 13px;
-}
-
 /*--------------------------------------------------------------
 3.0 Layout
 --------------------------------------------------------------*/
@@ -619,12 +611,10 @@ body.mce-content-body {
   padding-top: 40px;
 }
 
-.template-fullwidth-stretched #primary,
-.siteorigin-panels #primary {
+.template-fullwidth-stretched #primary, .siteorigin-panels #primary {
   padding: 0;
 }
-.template-fullwidth-stretched .entry-content,
-.siteorigin-panels .entry-content {
+.template-fullwidth-stretched .entry-content, .siteorigin-panels .entry-content {
   margin-bottom: 0px;
 }
 
@@ -659,18 +649,8 @@ body.mce-content-body {
   }
 }
 
-.left-sidebar .site-main {
-  margin-left: auto;
-}
-
 .no-sidebar .content-area {
   width: 100%;
-}
-
-.single-post .no-sidebar .site-main,
-.single-post .no-sidebar .entry-content > * {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media screen and (min-width: 940px) {
@@ -713,20 +693,16 @@ Footer widgets
 .footer-widgets table {
   border-collapse: collapse;
 }
-.footer-widgets table > thead > tr > th,
-.footer-widgets table > thead > tr > td {
+.footer-widgets table > thead > tr > th, .footer-widgets table > thead > tr > td {
   border-width: 1px;
 }
-.footer-widgets table th,
-.footer-widgets table td {
+.footer-widgets table th, .footer-widgets table td {
   border-color: rgba(233, 233, 233, 0.4);
 }
 .footer-widgets .widget-title {
   color: #ffffff;
 }
-.footer-widgets .widget-area .widget_categories li,
-.footer-widgets .widget-area .widget_archive li,
-.footer-widgets .widget-area .widget_meta li {
+.footer-widgets .widget-area .widget_categories li, .footer-widgets .widget-area .widget_archive li, .footer-widgets .widget-area .widget_meta li {
   width: 100% !important;
   float: none;
 }
@@ -749,12 +725,12 @@ Footer widgets
   line-height: 75px;
   position: relative;
   width: 100%;
-  background: #ffffff;
+  background: #FFFFFF;
   z-index: 1000;
   -webkit-transition: all 1s ease-out;
   /* Safari */
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
   box-shadow: 0 5px 10px 0 rgba(50, 50, 50, 0.06);
 }
 .site-header.header-fixed {
@@ -817,7 +793,7 @@ Footer widgets
   background-color: transparent;
 }
 .is-transparent .site-header.header-fixed {
-  background: #ffffff;
+  background: #FFFFFF;
 }
 .is-transparent .site-header.header-fixed.no-scroll {
   background: transparent;
@@ -838,8 +814,7 @@ Footer widgets
   float: left;
 }
 
-.site-branding .site-title,
-.site-branding .site-text-logo {
+.site-branding .site-title, .site-branding .site-text-logo {
   margin: 0px;
   line-height: 1;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
@@ -851,8 +826,7 @@ Footer widgets
   vertical-align: middle;
   font-weight: 600;
 }
-.site-branding .site-title:hover,
-.site-branding .site-text-logo:hover {
+.site-branding .site-title:hover, .site-branding .site-text-logo:hover {
   text-decoration: none;
 }
 .site-branding .site-title {
@@ -864,17 +838,14 @@ Footer widgets
 .site-branding .site-logo-div {
   line-height: 75px;
 }
-.site-branding .no-logo-img.has-desc,
-.site-branding .has-logo-img {
+.site-branding .no-logo-img.has-desc, .site-branding .has-logo-img {
   line-height: 60px;
 }
-.site-branding .no-logo-img.has-desc .site-title,
-.site-branding .has-logo-img .site-title {
+.site-branding .no-logo-img.has-desc .site-title, .site-branding .has-logo-img .site-title {
   margin-top: -5px;
   position: relative;
 }
-.site-branding .no-logo-img.has-desc .site-description,
-.site-branding .has-logo-img .site-description {
+.site-branding .no-logo-img.has-desc .site-description, .site-branding .has-logo-img .site-description {
   font-size: 12px;
   line-height: 14px;
   margin-bottom: 0;
@@ -883,8 +854,7 @@ Footer widgets
   color: #000000;
 }
 
-.home.header-transparent .no-scroll .site-brand-inner,
-.home.header-transparent .no-scroll .site-text-logo {
+.home.header-transparent .no-scroll .site-brand-inner, .home.header-transparent .no-scroll .site-text-logo {
   color: #fff;
 }
 
@@ -920,8 +890,7 @@ Footer widgets
   -webkit-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
 }
-.header-social .fa-stack-1x,
-.header-social .fa-stack-2x {
+.header-social .fa-stack-1x, .header-social .fa-stack-2x {
   position: absolute;
   left: 0;
   width: 100%;
@@ -934,7 +903,7 @@ Footer widgets
   font-size: 2em;
 }
 .header-social .fa-inverse {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .header-btn {
@@ -942,8 +911,7 @@ Footer widgets
 }
 
 /* Site Navigation */
-.onepress-menu,
-.onepress-menu * {
+.onepress-menu, .onepress-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -969,8 +937,7 @@ Footer widgets
 .onepress-menu > li {
   float: left;
 }
-.onepress-menu li:hover > ul,
-.onepress-menu li.sfHover > ul {
+.onepress-menu li:hover > ul, .onepress-menu li.sfHover > ul {
   display: block;
 }
 .onepress-menu a {
@@ -987,8 +954,8 @@ Footer widgets
 .onepress-menu li {
   white-space: nowrap;
   *white-space: normal;
-  -webkit-transition: background 0.2s;
-  transition: background 0.2s;
+  -webkit-transition: background .2s;
+  transition: background .2s;
 }
 .onepress-menu li:hover,
 .onepress-menu li.sfHover {
@@ -1053,20 +1020,17 @@ Footer widgets
 
   .main-navigation .onepress-menu {
     width: 100% !important;
-    display: block;
-    height: 0px;
-    overflow: hidden;
-    background: #fff;
+    display: none;
   }
 
   .onepress-menu.onepress-menu-mobile {
+    display: block !important;
     position: absolute;
     top: 75px;
     right: 0;
     width: 100%;
-    z-index: 800;
-    overflow: auto !important;
-    border-top: 1px solid #e9e9e9;
+    background: transparent;
+    z-index: 100;
     border-bottom: 1px solid #e9e9e9;
   }
   .onepress-menu.onepress-menu-mobile > li > a {
@@ -1103,12 +1067,9 @@ Footer widgets
   }
   .onepress-menu.onepress-menu-mobile li {
     line-height: 20px;
-    background: #ffffff;
+    background: #FFFFFF;
     border-top: 1px solid #e9e9e9;
     width: 100% !important;
-  }
-  .onepress-menu.onepress-menu-mobile > li:first-child {
-    border-top: 0px none;
   }
   .onepress-menu.onepress-menu-mobile li.onepress-current-item > a {
     color: #03c4eb;
@@ -1176,7 +1137,7 @@ Footer widgets
   height: 3px;
   width: 24px;
   background: #000000;
-  content: "";
+  content: '';
   right: 0;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -1232,19 +1193,8 @@ Footer widgets
   border-top: 1px solid #e9e9e9;
   background: #f8f9f9;
   border-bottom: 1px solid #e9e9e9;
-  position: relative;
 }
-.page-header:before {
-  position: absolute;
-  top: 0px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: block;
-  content: " ";
-}
-.page-header .entry-title,
-.page-header .page-title {
+.page-header .entry-title, .page-header .page-title {
   margin-bottom: 0px;
   font-size: 24px;
   font-weight: 600;
@@ -1307,7 +1257,7 @@ Footer widgets
 ------------------------------*/
 .site-footer {
   background: #111111;
-  color: #bbbbbb;
+  color: #BBBBBB;
   font-size: 14px;
 }
 .site-footer a {
@@ -1325,7 +1275,7 @@ Footer widgets
   }
 }
 .site-footer .footer-connect .follow-heading {
-  color: #ffffff;
+  color: #FFFFFF;
   margin-bottom: 20px;
   letter-spacing: 0.8px;
 }
@@ -1390,7 +1340,7 @@ Footer widgets
 .site-footer .footer-social a {
   font-size: 30px;
   margin: 0px 13px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 .site-footer .footer-social a:hover {
   color: #03c4eb;
@@ -1567,8 +1517,6 @@ Footer widgets
   border-left: none;
   border-right: none;
   margin-bottom: 50px;
-  flex-basis: 100%;
-  text-align: center;
 }
 .nav-links .nav-previous {
   float: left;
@@ -1576,7 +1524,7 @@ Footer widgets
 .nav-links .nav-next {
   float: right;
 }
-.nav-links a, .nav-links .page-numbers {
+.nav-links a {
   background: #cccccc;
   color: #FFFFFF;
   padding: 12px 20px;
@@ -1586,12 +1534,7 @@ Footer widgets
   text-transform: uppercase;
   border-radius: 2px;
 }
-@media screen and (max-width: 940px) {
-  .nav-links a, .nav-links .page-numbers {
-    padding: 6px 10px;
-  }
-}
-.nav-links a:hover, .nav-links a.current, .nav-links .page-numbers:hover, .nav-links .page-numbers.current {
+.nav-links a:hover {
   background: #03c4eb;
   text-decoration: none;
 }
@@ -1807,8 +1750,8 @@ Footer widgets
   text-decoration: underline;
 }
 
-.comment-respond textarea,
-.comment-respond textarea {
+.right-sidebar .comment-respond textarea,
+.left-sidebar .comment-respond textarea {
   width: 100%;
 }
 
@@ -1868,15 +1811,6 @@ Footer widgets
 }
 .btn:active, .btn:focus {
   outline: none;
-}
-.btn.btn-secondary-outline {
-  box-shadow: none;
-  border-color: rgba(255, 255, 255, 0.9);
-  color: rgba(255, 255, 255, 0.9);
-}
-.btn.btn-secondary-outline:hover {
-  background: #FFF;
-  color: #333;
 }
 
 .btn-lg {
@@ -1992,27 +1926,14 @@ section > .customize-partial-edit-shortcut button {
 
 /* Search
 ------------------------------*/
-.search-form {
-  display: -webkit-box;
-  display: flex;
-  width: 100%;
-  -webkit-box-align: center;
-          align-items: center;
-}
-.search-form .search-field {
+.sidebar .widget .search-form .search-field {
   width: 100% !important;
   padding: 10px 15px;
   padding:  0.625rem 0.9375rem;
 }
-.search-form .search-submit {
-  width: auto;
-  margin: 0px 0 0 0.5em;
-  height: 100%;
-}
-.search-form label {
-  -webkit-box-flex: 2;
-          flex-grow: 2;
-  margin: 0px;
+.sidebar .widget .search-form .search-submit {
+  padding: 12px 23px 12px;
+  width: 93%;
 }
 
 /* Recent Comment
@@ -2209,8 +2130,7 @@ section > .customize-partial-edit-shortcut button {
   display: block;
   content: "";
 }
-.hero-slideshow-wrapper .hero__content .hero-large-text, .hero-slideshow-wrapper .hero__content .hero-small-text, .hero-slideshow-wrapper .hero__content .btn,
-.hero-slideshow-wrapper .hero__content .hcl2-content {
+.hero-slideshow-wrapper .hero__content .hero-large-text, .hero-slideshow-wrapper .hero__content .hero-small-text, .hero-slideshow-wrapper .hero__content .btn {
   visibility: hidden;
   opacity: 0;
   -webkit-transform: translateY(100px);
@@ -2234,11 +2154,6 @@ section > .customize-partial-edit-shortcut button {
   /* Safari */
   transition-delay: 1s;
 }
-.hero-slideshow-wrapper .hero__content .hcl2-content {
-  -webkit-transition-delay: 0.7s;
-  /* Safari */
-  transition-delay: 0.7s;
-}
 .hero-slideshow-wrapper.loaded .container .hero__content:hover .hero-large-text, .hero-slideshow-wrapper.loaded .container .hero__content:hover .hero-small-text, .hero-slideshow-wrapper.loaded .container .hero__content:hover .btn {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -2260,7 +2175,7 @@ section > .customize-partial-edit-shortcut button {
 }
 .hero-slideshow-wrapper.loaded .container .hero__content .hero-large-text,
 .hero-slideshow-wrapper.loaded .container .hero__content .hero-small-text,
-.hero-slideshow-wrapper.loaded .container .hero__content .btn, .hero-slideshow-wrapper.loaded .container .hero__content .hcl2-content {
+.hero-slideshow-wrapper.loaded .container .hero__content .btn {
   visibility: visible;
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -2281,7 +2196,7 @@ section > .customize-partial-edit-shortcut button {
 .animation-disable .hero-slideshow-wrapper {
   /* Loading icon */
 }
-.animation-disable .hero-slideshow-wrapper .hero__content .hero-large-text, .animation-disable .hero-slideshow-wrapper .hero__content .hero-small-text, .animation-disable .hero-slideshow-wrapper .hero__content .btn, .animation-disable .hero-slideshow-wrapper .hero__content .hcl2-content {
+.animation-disable .hero-slideshow-wrapper .hero__content .hero-large-text, .animation-disable .hero-slideshow-wrapper .hero__content .hero-small-text, .animation-disable .hero-slideshow-wrapper .hero__content .btn {
   -webkit-transform: translateY(0px);
   -ms-transform: translateY(0px);
       transform: translateY(0px);
@@ -2301,12 +2216,7 @@ section > .customize-partial-edit-shortcut button {
   /* Safari */
   transition-delay: 0s;
 }
-.animation-disable .hero-slideshow-wrapper .hero__content .hcl2-content {
-  -webkit-transition-delay: 0s;
-  /* Safari */
-  transition-delay: 0s;
-}
-.animation-disable .hero-slideshow-wrapper.loaded .container .hero__content:hover .hero-large-text, .animation-disable .hero-slideshow-wrapper.loaded .container .hero__content:hover .hero-small-text, .animation-disable .hero-slideshow-wrapper.loaded .container .hero__content:hover .btn, .animation-disable .hero-slideshow-wrapper.loaded .container .hero__content:hover .hcl2-content {
+.animation-disable .hero-slideshow-wrapper.loaded .container .hero__content:hover .hero-large-text, .animation-disable .hero-slideshow-wrapper.loaded .container .hero__content:hover .hero-small-text, .animation-disable .hero-slideshow-wrapper.loaded .container .hero__content:hover .btn {
   -webkit-transition-delay: 0s;
   /* Safari */
   transition-delay: 0s;
@@ -2322,11 +2232,6 @@ section > .customize-partial-edit-shortcut button {
   transition-delay: 0s;
 }
 .animation-disable .hero-slideshow-wrapper.loaded .container .hero__content:hover .btn {
-  -webkit-transition-delay: 0s;
-  /* Safari */
-  transition-delay: 0s;
-}
-.animation-disable .hero-slideshow-wrapper.loaded .container .hero__content:hover .hcl2-content {
   -webkit-transition-delay: 0s;
   /* Safari */
   transition-delay: 0s;
@@ -2352,7 +2257,7 @@ section > .customize-partial-edit-shortcut button {
 .is-customize-preview .slider-spinner {
   display: none !important;
 }
-.is-customize-preview .hero-slideshow-wrapper .hero__content .hero-large-text, .is-customize-preview .hero-slideshow-wrapper .hero__content .hero-small-text, .is-customize-preview .hero-slideshow-wrapper .hero__content .btn, .is-customize-preview .hero-slideshow-wrapper .hero__content .hcl2-content {
+.is-customize-preview .hero-slideshow-wrapper .hero__content .hero-large-text, .is-customize-preview .hero-slideshow-wrapper .hero__content .hero-small-text, .is-customize-preview .hero-slideshow-wrapper .hero__content .btn {
   visibility: visible;
   opacity: 1;
   -webkit-transform: translateY(0px);
@@ -2376,12 +2281,7 @@ section > .customize-partial-edit-shortcut button {
   /* Safari */
   transition-delay: 0s;
 }
-.is-customize-preview .hero-slideshow-wrapper .hero__content .hcl2-content {
-  -webkit-transition-delay: 0s;
-  /* Safari */
-  transition-delay: 0s;
-}
-.is-customize-preview .hero-slideshow-wrapper.loaded .container .hero__content:hover .hero-large-text, .is-customize-preview .hero-slideshow-wrapper.loaded .container .hero__content:hover .hero-small-text, .is-customize-preview .hero-slideshow-wrapper.loaded .container .hero__content:hover .btn, .is-customize-preview .hero-slideshow-wrapper.loaded .container .hero__content:hover .hcl2-content {
+.is-customize-preview .hero-slideshow-wrapper.loaded .container .hero__content:hover .hero-large-text, .is-customize-preview .hero-slideshow-wrapper.loaded .container .hero__content:hover .hero-small-text, .is-customize-preview .hero-slideshow-wrapper.loaded .container .hero__content:hover .btn {
   -webkit-transition-duration: 0s;
   transition-duration: 0s;
 }
@@ -2400,15 +2300,9 @@ section > .customize-partial-edit-shortcut button {
   /* Safari */
   transition-delay: 0s;
 }
-.is-customize-preview .hero-slideshow-wrapper.loaded .container .hero__content:hover .hcl2-content {
-  -webkit-transition-delay: 0s;
-  /* Safari */
-  transition-delay: 0s;
-}
 .is-customize-preview .hero-slideshow-wrapper.loaded .container .hero__content .hero-large-text,
 .is-customize-preview .hero-slideshow-wrapper.loaded .container .hero__content .hero-small-text,
-.is-customize-preview .hero-slideshow-wrapper.loaded .container .hero__content .btn,
-.is-customize-preview .hero-slideshow-wrapper.loaded .container .hero__content .hcl2-content {
+.is-customize-preview .hero-slideshow-wrapper.loaded .container .hero__content .btn {
   visibility: visible;
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -2450,6 +2344,15 @@ section > .customize-partial-edit-shortcut button {
 .hero__content p {
   margin-bottom: 20px;
   margin-bottom: 1.25rem;
+}
+.hero__content .btn-secondary-outline {
+  box-shadow: none;
+  border-color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+}
+.hero__content .btn-secondary-outline:hover {
+  background: #FFF;
+  color: #333;
 }
 
 /* Hero Content Style 2. */
@@ -3296,7 +3199,7 @@ div.wpcf7-response-output {
   position: relative;
   display: block;
 }
-.gallery-masonry:after {
+.gallery-masonry:affter {
   clear: both;
 }
 .gallery-masonry .inner {
@@ -3976,6 +3879,7 @@ img.mfp-img {
 
 .owl-carousel .owl-stage {
   position: relative;
+  -ms-touch-action: pan-Y;
   touch-action: manipulation;
   -moz-backface-visibility: hidden;
   /* fix firefox animation glitch */
@@ -4037,6 +3941,16 @@ img.mfp-img {
   user-select: none;
 }
 
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+}
+
 .owl-carousel.owl-loaded {
   display: block;
 }
@@ -4055,6 +3969,7 @@ img.mfp-img {
 }
 
 .owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: none;
   touch-action: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -4181,10 +4096,7 @@ img.mfp-img {
 /*
  * 	Default theme - Owl Carousel CSS File
  */
-.owl-theme {
-  position: relative;
-}
-.owl-theme .owl-nav button {
+.owl-theme .owl-nav > div {
   position: absolute;
   top: 50%;
   background-color: rgba(0, 0, 0, 0.45);
@@ -4198,13 +4110,8 @@ img.mfp-img {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  border: 0px none;
 }
-.owl-theme .owl-nav button:focus {
-  box-shadow: none;
-  outline: none;
-}
-.owl-theme .owl-nav:hover {
+.owl-theme .owl-nav > div:hover {
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
 }
@@ -4227,11 +4134,12 @@ img.mfp-img {
   -webkit-tap-highlight-color: transparent;
 }
 
-.gallery-carousel.owl-theme .owl-nav [class*='owl-'] {
+.owl-theme .owl-nav [class*='owl-'] {
   color: #FFF;
   font-size: 14px;
   margin: 5px;
   padding: 4px 7px;
+  background: #D6D6D6;
   display: inline-block;
   cursor: pointer;
   border-radius: 3px;
@@ -4261,11 +4169,6 @@ img.mfp-img {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  background: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-  border: 0px none;
-  padding: 0px;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -4282,105 +4185,6 @@ img.mfp-img {
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #869791;
-}
-
-/* WP FORMS */
-div.wpforms-container .wpforms-form .wpforms-field .wpforms-field-label, div.wpforms-container .wpforms-form .wpforms-field .wpforms-field-sublabel {
-  text-transform: uppercase;
-  font-size: 11px;
-  letter-spacing: 2px;
-  font-weight: 600;
-}
-div.wpforms-container .wpforms-form .wpforms-field-row.wpforms-field-medium {
-  max-width: 100% !important;
-}
-div.wpforms-container .wpforms-form .wpforms-field input[type=date],
-div.wpforms-container .wpforms-form .wpforms-field input[type=datetime],
-div.wpforms-container .wpforms-form .wpforms-field input[type=datetime-local],
-div.wpforms-container .wpforms-form .wpforms-field input[type=email],
-div.wpforms-container .wpforms-form .wpforms-field input[type=month],
-div.wpforms-container .wpforms-form .wpforms-field input[type=number],
-div.wpforms-container .wpforms-form .wpforms-field input[type=password],
-div.wpforms-container .wpforms-form .wpforms-field input[type=range],
-div.wpforms-container .wpforms-form .wpforms-field input[type=search],
-div.wpforms-container .wpforms-form .wpforms-field input[type=tel],
-div.wpforms-container .wpforms-form .wpforms-field input[type=text],
-div.wpforms-container .wpforms-form .wpforms-field input[type=time],
-div.wpforms-container .wpforms-form .wpforms-field input[type=url],
-div.wpforms-container .wpforms-form .wpforms-field input[type=week],
-div.wpforms-container .wpforms-form .wpforms-field select,
-div.wpforms-container .wpforms-form .wpforms-field textarea {
-  padding: 10px;
-  max-width: 100%;
-  border: 0px;
-  font-size: 15px;
-  font-weight: normal;
-  line-height: 22px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
-  -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
-  transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  background-color: #f2f2f2;
-  border-bottom: 1px solid #fff;
-  box-sizing: border-box;
-  color: #000000;
-  border-bottom: 1px solid #fff;
-}
-div.wpforms-container .wpforms-form .wpforms-field input[type=date]:hover, div.wpforms-container .wpforms-form .wpforms-field input[type=date]:focus,
-div.wpforms-container .wpforms-form .wpforms-field input[type=datetime]:hover,
-div.wpforms-container .wpforms-form .wpforms-field input[type=datetime]:focus,
-div.wpforms-container .wpforms-form .wpforms-field input[type=datetime-local]:hover,
-div.wpforms-container .wpforms-form .wpforms-field input[type=datetime-local]:focus,
-div.wpforms-container .wpforms-form .wpforms-field input[type=email]:hover,
-div.wpforms-container .wpforms-form .wpforms-field input[type=email]:focus,
-div.wpforms-container .wpforms-form .wpforms-field input[type=month]:hover,
-div.wpforms-container .wpforms-form .wpforms-field input[type=month]:focus,
-div.wpforms-container .wpforms-form .wpforms-field input[type=number]:hover,
-div.wpforms-container .wpforms-form .wpforms-field input[type=number]:focus,
-div.wpforms-container .wpforms-form .wpforms-field input[type=password]:hover,
-div.wpforms-container .wpforms-form .wpforms-field input[type=password]:focus,
-div.wpforms-container .wpforms-form .wpforms-field input[type=range]:hover,
-div.wpforms-container .wpforms-form .wpforms-field input[type=range]:focus,
-div.wpforms-container .wpforms-form .wpforms-field input[type=search]:hover,
-div.wpforms-container .wpforms-form .wpforms-field input[type=search]:focus,
-div.wpforms-container .wpforms-form .wpforms-field input[type=tel]:hover,
-div.wpforms-container .wpforms-form .wpforms-field input[type=tel]:focus,
-div.wpforms-container .wpforms-form .wpforms-field input[type=text]:hover,
-div.wpforms-container .wpforms-form .wpforms-field input[type=text]:focus,
-div.wpforms-container .wpforms-form .wpforms-field input[type=time]:hover,
-div.wpforms-container .wpforms-form .wpforms-field input[type=time]:focus,
-div.wpforms-container .wpforms-form .wpforms-field input[type=url]:hover,
-div.wpforms-container .wpforms-form .wpforms-field input[type=url]:focus,
-div.wpforms-container .wpforms-form .wpforms-field input[type=week]:hover,
-div.wpforms-container .wpforms-form .wpforms-field input[type=week]:focus,
-div.wpforms-container .wpforms-form .wpforms-field select:hover,
-div.wpforms-container .wpforms-form .wpforms-field select:focus,
-div.wpforms-container .wpforms-form .wpforms-field textarea:hover,
-div.wpforms-container .wpforms-form .wpforms-field textarea:focus {
-  border: none;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
-  -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
-  transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  border-color: #EBEBEB;
-  border-bottom: 1px solid #fff !important;
-  background: #e9e9e9;
-}
-div.wpforms-container .wpforms-form .wpforms-field textarea {
-  min-height: 215px;
-}
-div.wpforms-container .wpforms-form button[type=submit] {
-  width: 100%;
-  text-align: center;
-  display: block;
 }
 
 /* Pirate Forms */
@@ -4404,444 +4208,763 @@ div.wpforms-container .wpforms-form button[type=submit] {
   max-height: 999px;
 }
 
-/**
-* JQuery Bullly
-* @see https://github.com/pixelgrade/rellax/blob/gh-pages/assets/css/bully.css
- */
-[class*="c-bully"],
-[class*="c-bully"]:before,
-[class*="c-bully"]:after {
-  box-sizing: border-box;
+
+
+/* Custom style TPSS (30 Aug)*/
+
+/* header css */
+
+.site-header {padding: 0;}
+
+.site-header .container {width: 100%;max-width: 1390px;}
+
+.site-header .site-branding {padding-top: 15px;padding-bottom: 15px;}
+
+body.home #primary {padding-bottom: 0;padding-top: 0;}
+
+body.home .site-header.no-scroll {background: none;box-shadow: none;}
+
+body.home .followWrap {height: auto !important;}
+
+.site-header .onepress-menu>li>a {color: #232222;font-size: 20px;font-weight: 600;}
+
+body.home .site-header.no-scroll .onepress-menu>li>a {color: #fff;}
+
+.site-header .onepress-menu>li>a:hover, .site-header .onepress-menu>li.onepress-current-item>a {background: none;}
+
+.site-header .onepress-menu>li>a {position: relative;}
+
+.site-header .onepress-menu>li>a:hover::after , .site-header .onepress-menu>li.current_page_item>a::after {content: "";position: absolute;width: auto;height: 2px;background: #4f8abf;top: auto;left: 17px;right: 17px;bottom: 25px;z-index: 9;}
+
+body.home .site-header.no-scroll .onepress-menu>li>a:hover::after , body.home .site-header.no-scroll .onepress-menu>li.onepress-current-item>a::after {background: #fff;}
+
+/*#service_list {display: inline-block;width: 100%;margin: 80px 0;padding: 0;text-align: center;}
+
+#service_list ul {margin: 0 !important;padding: 0 !important;list-style: none;width: 100%;}
+
+#service_list ul li {width: 250px;float: none;display: inline-block;vertical-align: top;color: #fff;margin: 0;padding: 0 10px;box-sizing: border-box;}
+
+#service_list ul li figure.service_icon {margin: 0;padding: 0;width: auto;}
+
+#service_list ul li h2 {color: #fff;line-height: 26px;margin: 28px 0 0 0;padding: 0;font-size: 20px;text-transform: uppercase;}
+
+.service_icon img {width: auto;height: auto;max-width: 100%;vertical-align: top;}*/
+
+.testimonials_outer.strong-view.modern .testimonial-content:before, .testimonials_outer.strong-view.modern .testimonial-content:after {display: none;visibility: hidden;opacity: 0;}
+
+.testimonials_outer.strong-view.modern .testimonial-content {font-size: 20px;font-style: normal;margin: 0 56px;position: relative;text-align: center;line-height: normal;color: #424242;}
+
+.testimonials_outer.strong-view.modern .testimonial-client {margin-top: 25px;font-size: 14px;color: #424242;}
+
+.testimonials_outer.strong-view.modern .testimonial-name {font-size: 20px;color: #1e2125;font-weight: bold;line-height: normal;margin: 0;padding: 0;}
+
+.testimonials_outer.strong-view.modern .testimonial-company {color: #1e2125;font-size: 18px;line-height: normal;font-weight: normal;margin: 3px 0 28px 0;}
+
+.testimonials_outer.strong-view.modern .testimonial-inner {padding-bottom: 0;padding-top: 40px;}
+
+#testimonials_blockquote .tve-page-section-out {background-position: center 20% !important;}
+
+#useful_links h4 , #tve_editor #useful_links [data-css="tve-u-165b38aa973"]{margin: 0 !important;padding: 35px 0; position: relative;font-size: 22px !important;}
+
+#useful_links .tcb-flex-row .tcb-col {position: relative;}
+
+#useful_links .tcb-flex-row .tcb-col::before {content: "";position: absolute;top:0;bottom:0;width: 22px;left: auto;right: 100%;background: inherit;transform: skewX(-10deg);transform-origin: bottom left;}
+
+#useful_links .tcb-flex-row .tcb-flex-col:last-child .tcb-col::after {content: "";position: absolute;height: 100%;width: 22px;left: 100%;right: auto;background: inherit;transform: skewX(-10deg);transform-origin: top left;}
+
+#useful_links {overflow:hidden;padding: 0 35px;}
+
+#useful_links::after {background: #fff;position: absolute;content: "";bottom: -1px;left: 0;right: 0;top: auto;height: 3px;}
+
+
+
+
+/* contact us page css */
+
+.contact_info_outer {display: inline-block;width: 100%;margin: 0;padding: 0;line-height: normal;word-wrap: break-word;}
+
+.contact_info {float: left;width: 100%;margin: 15px 0;padding: 0 0 0 75px;position: relative;min-height: 50px;box-sizing: border-box !important;word-wrap: break-word;}
+
+.contact_info i.contact_info_icon {position: absolute;left: 0;top: 5px;z-index: 2;right: auto;bottom: auto;}
+
+.contact_info label {float: left;width: 100%;margin: 0;padding: 0;font-size: 17px;color: #5d5d5d;font-weight: normal;line-height: normal;font-family: "Open Sans" !important;}
+
+.contact_info h3 {float: left;width: 100%;margin: 0;padding: 0;font-size: 27px;color: #1e1b1b;font-weight: bold;line-height: normal;font-family: "Open Sans" !important;}
+
+.contact_info h3 a{color: #1e1b1b;}
+
+.contact_info h3 a:hover {color: #4f8abf;}
+
+.contact_info h3 small {font-size: 14px;margin-left: 10px;}
+
+.contact_info h3 small a{color: #4f8abf;text-decoration: underline;}
+
+.contact_info h3 small a:hover {color: #000;}
+
+.formcraft-css .powered-by {display: none !important;visibility: hidden;opacity: 0;}
+
+.resource_text a.tcb-button-link:hover , .resource_text a.tcb-button-link:hover *{background: none;color: #4c7fad !important;}
+
+p:empty {margin: 0;}
+
+#testimonials_page_outer .strong-view.default .testimonial {background: #fff;border: none;padding: 60px 30px;text-align: center;}
+
+#testimonials_page_outer .strong-view .strong-content.strong-grid .testimonial-inner {display: flex;align-items: flex-start;flex-wrap: wrap;padding: 0;margin: 0;border: none;text-align: center;line-height: normal;}
+
+#testimonials_page_outer .testimonial-inner .testimonial-content {order: 2;min-width: 100%;max-width: 100%;text-align: center;font-size: 17px;margin: 0;padding: 0;color: #5d5d5d;line-height: normal;}
+
+#testimonials_page_outer .testimonial-inner .testimonial-client {order: 1;min-width: 100%;max-width: 100%;text-align: center;margin: 0 0 10px 0;padding: 0;}
+
+.testimonial-client .testimonial-name {font-size: 19px;color: #272525;margin: 0;padding: 0;font-weight: 600 !important;line-height: normal;}
+
+.testimonial-client .testimonial-company {font-size: 15px;color: #5d5d5d;font-weight: normal;margin: 0;padding: 0;}
+
+.signup_form_outer #_form_174_ {position: relative;text-align: left;margin: 0;padding: 36px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;background: #fff !important;border: none !important;width: 500px;-moz-border-radius: 0px !important;-webkit-border-radius: 0px !important;border-radius: 0px !important;color: #000 !important;max-width: 100%;box-sizing: border-box;}
+
+.signup_form_outer #_form_174_ ._form-branding ._logo {display: block;width: 130px;height: 14px;margin-top: 6px;background-image: url(https://d226aj4ao1t61q.cloudfront.net/jftq2c8s_aclogo_dk.png);background-size: 130px auto;background-repeat: no-repeat;}
+
+.signup_form_outer ._form-content , .signup_form_outer ._form-content ._form_element , .signup_form_outer ._form-content ._form_element ._field-wrapper , 
+.signup_form_outer ._form-content ._form_element ._field-wrapper input[type="text"] {width: 100%;margin: 0;padding: 0;display: inline-block;}
+
+.signup_form_outer ._form-content ._form_element ._field-wrapper input[type="text"] {height: 47px;border: 1px solid #e7e7e7;border-radius: 2px;background: #fff;color: #000;padding: 0 20px;box-shadow: none;font-size: 17px;line-height: normal;}
+
+.signup_form_outer ._form-content ._form_element {margin-bottom: 18px;}
+
+.signup_form_outer ._form-branding {display: inline-block;width: 100%;margin: 0;padding: 0;display: none;visibility: hidden;opacity: 0;}
+
+.signup_form_outer ._form-branding ._marketing-by {font-size: 11px;line-height: normal;color: #202020;margin: 0 0 5px 0;}
+
+.signup_form_outer ._error {color: red;font-size: 12px;}
+
+.signup_form_outer code.tve_js_placeholder {opacity: 0;}
+
+.signup_form_outer ._button-wrapper button._submit {height: 47px;border: none;border-radius: 2px;background: #4f8abf;color: #fff;padding: 0 20px;box-shadow: none;font-size: 19px;line-height: normal;font-weight: 600;text-transform: uppercase;min-width: 98px;margin: 0;}
+
+.signup_form_outer ._button-wrapper button._submit:hover {background: #333;color: #fff;}
+
+.formcraft-css .fc-form-52 input[type=checkbox]:before, .formcraft-css .fc-form-52 input[type=radio]:before {top: 6px;left: 5px;}
+
+#service_price_form .formcraft-css .form-cover form.fc-form.fc-form-22 .form-page-content {-webkit-column-count: 1;-moz-column-count: 1;column-count: 1;max-width: 100%;width: 100%;}
+
+#service_price_form .formcraft-css .form-cover form.fc-form.fc-form-22 .form-page .form-element-field16 {margin-bottom: 38px;}
+
+#service_price_form .formcraft-css .form-cover form.fc-form.fc-form-22 {background: #fff !important;padding: 30px 35px;}
+
+#service_page_banner .testimonials_outer , #service_page_banner .testimonials_outer * {color: #fff !important;}
+
+#service_page_banner .testimonials_outer.strong-view.modern .testimonial-company {margin-bottom: 3px;}
+
+#service_page_banner .testimonials_outer.strong-view.modern .testimonial-inner {padding-top: 0;}
+
+#service_page_form2 .formcraft-css .form-cover form.fc-form.fc-form-47 {margin: 0 auto;padding: 0;background: none !important;border: none !important;box-shadow: none;color: #000 !important;width: 100% !important;min-width: 100%;max-width: 100%;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .field-cover.heading-cover>div {margin: 0 0 25px 0 !important;padding: 0 !important;color: #262424 !important;font-size: 18px !important;font-weight: normal !important;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-page-content {width: 100%;display: flex;flex-wrap: wrap;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element {max-width: 50%;padding: 0 10px;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element.form-element-field13 , 
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element.form-element-field19 ,
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element.form-element-field22 {max-width: 100%;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element ,
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element.form-element-field22 , 
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element.form-element-field22 font
+{color:#262424 !important;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element.form-element-field22 {margin-top:5px !important;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element.form-element-field22 font ,
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .field-cover>div.full{text-align: center !important;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .form-element-html input[type=text] ,
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .form-element-html input[type='email'] 
+{height: 58px;border-radius: 3px;width: 100%;background: #fff;margin: 0 0 13px 0;padding: 0 20px;border: 1px solid #d7d7d7;font-size: 16px;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .field-cover .formcraft-icon {margin: 14px;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .checkbox-cover>div label input {border-color: #262424;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .fileupload-cover.field-cover .button-file, 
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .submit-cover.wide-true .submit-button 
+{height: 58px;background: #4f8abf;color: #fff !important;border-radius: 3px;font-weight: 600;line-height: normal;padding: 0 15px;margin: 0;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .fileupload-cover.field-cover .button-file {border: 2px dashed #4f8abf;background: #fff;color: #000000 !important;line-height: 56px;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .fileupload-cover.field-cover .button-file i.icon-upload-cloud.formcraft-icon {color: #000;opacity: 1;position: static;display: inline-block;margin: 0 13px 0 0;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 input[type=checkbox]:before, 
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 input[type=radio]:before {border-color:#262424 !important;left: 5px;top: 7px;}
+
+.service_block .tcb-flex-row .tcb-flex-col:first-child, 
+.service_block .tcb-flex-row.v-2:not(.tcb-mobile-no-wrap) .tcb-flex-col:first-child ,
+.service_block .thrv_wrapper .tcb-flex-row:not(.v-2) .tcb-flex-col:first-child 
+{max-width: 48px !important;padding: 3px 0 0 0;}
+
+.service_block .tcb-flex-row .tcb-flex-col, .service_block .tcb-flex-row.v-2:not(.tcb-mobile-no-wrap) .tcb-flex-col ,
+.service_block .thrv_wrapper .tcb-flex-row:not(.v-2) .tcb-flex-col{max-width: calc(100% - 50px) !important;padding: 0 0 0 25px;}
+
+.service_block .tcb-flex-row {flex-wrap: unset !important;flex-flow: row !important;}
+
+.service_block .tcb-flex-row .tcb-flex-col p {margin: 0;}
+
+.service_block .tcb-flex-row .tcb-flex-col h4 {margin: 0 0 13px 0;}
+
+/* footer css */
+
+.site-footer .site-info {border-top: 1px solid #1a1a1a;color: #434343;font-size: 18px;line-height: normal;padding: 38px 0;}
+
+.site-footer .footer-widgets.section-padding {margin: 0;padding: 75px 0 60px;}
+
+.site-footer .footer-connect {margin: 0;padding: 0 0 70px 0;}
+
+.site-footer .footer-connect .follow-heading {color: #999999;font-size: 18px;font-weight: normal;text-transform: none;margin: 0 0 10px 0;padding: 0;line-height: normal;}
+
+.site-footer .footer-social a {font-size: 24px;}
+
+.footer-widgets .sidebar .widget , .footer-widgets .sidebar .widget .menu-main-container , .footer-widgets .sidebar .widget .menu-main-container ul {float: left;margin: 0;padding: 0;width: 100%;display: inline-block;text-align: center;}
+
+.footer-widgets .sidebar .widget .menu-main-container ul li {margin: 0 22px;padding: 0;display: inline-block;width: auto;vertical-align: top;}
+
+.footer-widgets .sidebar .widget .menu-main-container ul li a {margin: 0;padding: 0;width: 100%;font-size: 18px;color: #ffffff;font-weight: 600;text-transform: uppercase;line-height: normal;}
+
+
+/* form ID 22 css start */
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 {margin: 0;border: none;border-radius: 0;background: none !important;padding: 0;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 , .formcraft-css .form-cover form.fc-form.fc-form-22 * {box-sizing: border-box !important;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-page-content , .formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .form-element-html{padding: 0;margin: 0;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-page-content .form-element-type-heading:first-child .heading-cover ,
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .field-cover.heading-cover ,
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-page-content .form-element-type-customText:first-child, 
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-page-content .form-element-type-heading:first-child ,
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .fileupload-cover.field-cover>div ,
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .field-cover.customText-cover
+{margin:0;padding: 0;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .form-element-html input[type=text] , 
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .field-cover input[type="email"]
+{height: 42px;border-radius: 2px;width: 100%;background: #fff;margin: 0 0 20px 0;padding: 0 11px;color: #333;border: 1px solid #c7c7c7 !important;font-size: 14px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .field-cover .formcraft-icon {margin: 6px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element , .formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .fileupload-cover.field-cover .button-file {width: 100%;box-sizing: border-box;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .error {padding: 6px 12px;font-size: 12px;top: -8px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .checkbox-cover>div label input[type="checkbox"] {margin: 0;border-radius: 0;background: none !important;border: 1px solid #5d5d5d;position: absolute;left: 0;top: 5px;width: 16px;height: 16px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .checkbox-cover>div label input[type="radio"] {margin: 0;background: none !important;border-color:#5d5d5d;position: absolute;left: 0;top: 5px;width: 16px;height: 16px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .checkbox-cover>div label input[type="checkbox"]:checked, 
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .checkbox-cover>div label input[type="radio"]:checked 
+{border-color: #3b77d1 !important;background: #4488ee !important;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 input[type=checkbox]:before, .formcraft-css .form-cover form.fc-form.fc-form-22 input[type=radio]:before {left: 5px;top: 6px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .submit-cover.wide-true .submit-button {width: 100%;padding: 0 15px;background: #11140d;height: 42px;font-weight: bold;text-transform: uppercase;border-radius: 0;line-height: normal;box-sizing: border-box;margin: 0 0 8px 0;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-page-content .form-element-type-customText:last-child .customText-cover ,
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .field-cover.customText-cover p {margin: 0;padding: 0;font-size: 14px;line-height: normal;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-page-content .form-element-type-customText:last-child .form-element-html {margin: 10px 0 0 0;line-height: normal;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element.form-element-field42 .form-element-html .heading-cover.field-cover span, .formcraft-css .form-cover form.fc-form.fc-form-22 .form-element.form-element-field47 .form-element-html .heading-cover.field-cover span 
+{font-size: 40px;font-weight: bold;text-transform: uppercase;line-height: normal;color: #262424;margin: 0 0 10px 0;padding: 0;display: inline-block;width: 100%;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-page .form-element-field11 ,
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-page .form-element-field12 ,
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-page .form-element-field13 {margin: 0 0 10px 0;display: inline-block;width: 100%;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .submit-cover.align-right {text-align: left;margin-top: 10px;}
+
+.formcraft-css .fc-form.fc-form-54 .form-element .submit-cover .submit-button, .formcraft-css .fc-form.fc-form-54 .form-element .field-cover .button{background: #4f8abf;color: #ffffff;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-page .form-element-field16 {margin-bottom: 50px;display: inline-block;width: 100%;background: #f1f1f1;top: 0;padding: 10px 15px;font-size: 16px;color: #262424;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .checkbox-cover>div {margin: 0;padding: 0;display: flex;flex-wrap: wrap;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .checkbox-cover>div label {padding: 0 15px 0 25px;margin: 0 0 15px 0;position: relative;font-size: 14px;line-height: normal;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-page .form-element-field11 .checkbox-cover>div label {min-width: 100%;width: 100%;max-width: 100%;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element.form-element-field48 {padding-top: 14px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .field-cover span.main-label:empty {margin: 0;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .field-cover span.main-label {color: #1e1b1b;font-size: 18px;line-height: normal;margin: 0 0 10px 0;padding: 0;display: inline-block;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-page-content {-webkit-column-count: 2;-moz-column-count: 2;column-count: 2;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .form-element-html input[type=text]::placeholder , 
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .field-cover input[type="email"]::placeholder ,
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .form-element-html input::placeholder {color: #333333;opacity: 1;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .form-element-html input[type=text]:-ms-input-placeholder , 
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .field-cover input[type="email"]:-ms-input-placeholder ,
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .form-element-html input:-ms-input-placeholder {color: #333333;opacity: 1;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .form-element-html input[type=text]::-ms-input-placeholder , 
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .field-cover input[type="email"]::-ms-input-placeholder ,
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .form-element-html input::-ms-input-placeholder {color: #333333;opacity: 1;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .submit-cover .submit-button {min-width: 180px;width: auto;padding: 0 15px;background: #4f8abf;height: 42px;font-weight: bold;text-transform: uppercase;border-radius: 3px;line-height: normal;box-sizing: border-box;margin: 0;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .form-element-html .field-cover .StripeElement, 
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .form-element-html .field-cover .stripe-builder-show 
+{background-color: #ffffff;color: #000;border: 1px solid #c7c7c7 !important;height: 42px;padding: 8px 13px;line-height: normal;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-row > label {display: none;visibility: hidden;opacity: 0;}
+
+
+/* Form ID 22 css end */
+
+
+/* Form ID 47 css start */
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 {margin: 0;border: none;border-radius: 0;background: rgba(255,255,255,.2) !important;padding: 33px 30px;float: none;display: inline-block;box-shadow: 0 0 30px 15px rgba(0,0,0,.2);}
+
+.banner_content_outer .formcraft-css .form-cover {text-align: center;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-page-content , .formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .form-element-html{padding: 0;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-page-content .form-element-type-heading:first-child .heading-cover ,
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .field-cover.heading-cover ,
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-page-content .form-element-type-customText:first-child, 
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-page-content .form-element-type-heading:first-child ,
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .fileupload-cover.field-cover>div {margin:0;padding: 0;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .form-element-html input[type=text] ,
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .field-cover input[type="email"]
+{height: 42px;border-radius: 0;width: 100%;border: none;background: #eeeeee;margin: 0 0 20px 0;padding: 0 11px;color: #333;font-size: 16px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .field-cover .formcraft-icon {margin: 6px;color: #333;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element , .formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .fileupload-cover.field-cover .button-file {width: 100%;box-sizing: border-box;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .fileupload-cover.field-cover .button-file {padding: 0 35px;height: 42px;line-height: 38px;border-radius: 3px;font-size: 16px;text-transform: uppercase;font-weight: 700;margin-bottom: 10px;border: 2px dashed #4f8abf;background: none;color: #f9f9f9 !important;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .fileupload-cover.field-cover .button-file .icon-upload-cloud {font-size: 24px;bottom: auto;height: auto;line-height: normal;margin: 0 10px 0 0;position: static;display: inline-block;color: #f9f9f9;opacity: 1;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .error {padding: 6px 12px;font-size: 12px;top: -8px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .checkbox-cover>div label input {margin: 0;border-radius: 0;background: none !important;border: 1px solid #fff;position: absolute;left: 0;top: 5px;width: 16px;height: 16px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .checkbox-cover>div label {padding: 0 0 0 26px;margin: 0 0 15px 0;position: relative;font-size: 14px;line-height: normal;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .submit-cover.wide-true .submit-button {width: 100%;padding: 0 15px;background: #4f8abf;height: 42px;font-weight: bold;text-transform: uppercase;border-radius: 0;line-height: normal;box-sizing: border-box;margin: 0 0 8px 0;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-page-content .form-element-type-customText:last-child .customText-cover ,
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .field-cover.customText-cover p {margin: 0;padding: 0;font-size: 14px;line-height: normal;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-page-content .form-element-type-customText:last-child .form-element-html {margin: 10px 0 0 0;line-height: normal;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element.form-element-field24 .form-element-html .heading-cover.field-cover span , 
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element.form-element-field25 .form-element-html .heading-cover.field-cover span
+{font-size: 26px;font-weight: bold;text-transform: uppercase;line-height: normal;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element.form-element-field25 .form-element-html .heading-cover.field-cover span {font-size: 16px;text-transform: none;font-weight: normal;margin-bottom: 11px;display: inline-block;width: 100%;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .checkbox-cover>div {margin:0;padding:0;border:none;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .form-element-html input::placeholder {color: #333;opacity: 1;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .form-element-html input:-ms-input-placeholder {color: #333;opacity: 1;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .form-element-html input::-ms-input-placeholder {color: #333;opacity: 1;}
+
+/* Form ID 47 css end */
+
+/* Form ID 6 css start */
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 {margin: 0;border: none;border-radius: 0;padding: 38px;box-shadow: none;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-page-content , .formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .form-element-html{padding: 0;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-page-content .form-element-type-heading:first-child .heading-cover ,
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .field-cover.heading-cover ,
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-page-content .form-element-type-customText:first-child, 
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-page-content .form-element-type-heading:first-child ,
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .fileupload-cover.field-cover>div {margin:0;padding: 0;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .form-element-html input[type=text] , 
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .form-element-html input[type="email"] ,
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .field-cover textarea
+{height: 46px;border-radius: 2px;width: 100%;border: 1px solid #c7c7c7 !important;background: #fff;margin: 0 0 20px 0;padding: 0 11px;color: #333;font-size: 16px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .field-cover textarea {height: 155px;padding-top: 10px;max-width: 100%;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .field-cover .formcraft-icon {margin: 6px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element , .formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .fileupload-cover.field-cover .button-file {width: 100%;box-sizing: border-box;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .fileupload-cover.field-cover .button-file {padding: 0 10px;height: 47px;line-height: 42px;border-radius: 3px;font-size: 17px;text-transform: uppercase;font-weight: 800;margin-bottom: 10px;border: 2px dashed #4f8abf;background: none;color: #1e1b1b !important;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .fileupload-cover.field-cover .button-file .icon-upload-cloud {font-size: 24px;bottom: auto;height: auto;line-height: normal;margin: -3px 10px 0 0;position: static;display: inline-block;color: #1e1b1b;opacity: 1;vertical-align: middle;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .error {padding: 6px 12px;font-size: 12px;top: -8px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .checkbox-cover>div label input {margin: 0;background: none !important;border: 1px solid #5d5d5d;position: absolute;left: 0;top: 5px;width: 16px;height: 16px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .checkbox-cover>div label {padding: 0 0 0 22px;margin: 0 33px 15px 0;position: relative;font-size: 14px !important;line-height: normal;color: #5d5d5d;font-size: 16px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .field-cover input[type="radio"]:checked, 
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .field-cover input[type="checkbox"]:checked {border-color: #3b77d1 !important;background: #4488ee !important;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 input[type=checkbox]:before, .formcraft-css .form-cover form.fc-form.fc-form-6 input[type=radio]:before {top: 6px;left: 5px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .submit-cover.wide-true .submit-button {width: 100%;padding: 0 10px;background: #4f8abf;height: 47px;font-weight: bold;text-transform: uppercase;border-radius: 2px;box-sizing: border-box;margin: 0;font-size: 19px;line-height: normal;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-page-content .form-element-type-customText:last-child .customText-cover ,
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .field-cover.customText-cover p {margin: 0;padding: 0;font-size: 14px;line-height: normal;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-page-content .form-element-type-customText:last-child .form-element-html {margin: 10px 0 0 0;line-height: normal;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element.form-element-field24 .form-element-html .heading-cover.field-cover span , 
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element.form-element-field25 .form-element-html .heading-cover.field-cover span
+{font-size: 26px;font-weight: bold;text-transform: uppercase;line-height: normal;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element.form-element-field25 .form-element-html .heading-cover.field-cover span {font-size: 16px;text-transform: none;font-weight: normal;margin-bottom: 11px;display: inline-block;width: 100%;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element.form-element-field10 {padding-right: 10px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element.form-element-field3 {padding-left: 10px;margin-top: 1px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .form-element-html input::placeholder ,
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .field-cover textarea::placeholder {color: #333;opacity: 1;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .form-element-html input:-ms-input-placeholder ,
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .field-cover textarea:-ms-input-placeholder {color: #333;opacity: 1;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .form-element-html input::-ms-input-placeholder ,
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .field-cover textarea::-ms-input-placeholder {color: #333;opacity: 1;}
+
+
+/* Form ID 6 css end */
+
+#primary main.site-main article > .entry-content {margin-bottom: 0;}
+
+#content-inside > #primary {padding: 0;}
+
+.service_icon_section .thrv_wrapper.thrv-button.resource_text {max-width: 100% !important;}
+
+html body #service_page_form2 .form-live , #service_page_form2 .form-live {overflow: visible !important;}
+
+
+
+
+/* Media css */
+
+@media (max-width: 1600px) {
+
+.site-header .onepress-menu>li>a {font-size: 18px;}
+
+.site-header .site-branding {padding-top: 10px;padding-bottom: 10px;}
+
+.site-header .site-branding .site-logo-div img {width:220px;}
+
+.site-header .site-branding .site-logo-div {line-height: 67px;}
+
+.site-footer .footer-widgets.section-padding {padding: 55px 0 40px;}
+
+.site-footer .footer-connect {padding-bottom: 45px;}
+
+.site-footer .site-info {padding: 26px 0;}
+
+#useful_links h4, #tve_editor #useful_links [data-css="tve-u-165b38aa973"] ,
+#tve_editor #useful_links [data-css="tve-u-165b38ab379"] ,
+#tve_editor #useful_links [data-css="tve-u-165894e8a34"]
+{padding: 25px 20px;font-size: 18px !important;}
+
 }
 
-.c-bully {
-  position: fixed;
-  top: 50%;
-  right: 28px;
-  font-size: 12px;
-  -webkit-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  z-index: 600;
-  color: #333;
-  text-transform: uppercase;
-}
-@media screen and (max-width: 940px) {
-  .c-bully {
-    right: 0px;
-  }
-}
-.c-bully.c-bully--inversed {
-  color: #fff;
-}
-@media screen and (max-width: 940px) {
-  .c-bully.c-bully-hide-on-mobile {
-    display: none;
-  }
+@media (max-width: 1170px) {
+
+.contact_info h3 {font-size: 22px;}
+
+.signup_form_outer #_form_174_ {padding: 20px;}
+
+.signup_form_outer ._form-content ._form_element ._field-wrapper input[type="text"] {height: 40px;padding: 0 15px;font-size: 15px;}
+
+.signup_form_outer ._form-content ._form_element {margin-bottom: 15px;}
+
+.signup_form_outer ._button-wrapper button._submit {height: 40px;padding: 0 15px;font-size: 17px;}
+
+.service_block .tcb-flex-row .tcb-flex-col h4 {margin-bottom:8px;}
+
+#service_price_form .formcraft-css .form-cover form.fc-form.fc-form-22 {padding: 20px 25px;}
+
+#service_price_form .formcraft-css .form-cover form.fc-form.fc-form-22 .form-element.form-element-field42 .form-element-html .heading-cover.field-cover span ,
+#service_price_form .formcraft-css .form-cover form.fc-form.fc-form-22 .form-element.form-element-field47 .form-element-html .heading-cover.field-cover span
+{font-size: 32px;margin-bottom: 5px;}
+
+#service_price_form .formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .checkbox-cover>div label {font-size: 12px;}
+
+#service_price_form .formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .checkbox-cover>div label input[type="checkbox"] ,
+#service_price_form .formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .checkbox-cover>div label input[type="radio"] {top: 2px;}
+
+.testimonials_outer.strong-view.modern .testimonial-content ,
+.testimonials_outer.strong-view.modern .testimonial-name {font-size: 18px;margin: 0;}
+
+.testimonials_outer.strong-view.modern .testimonial-company {font-size: 16px;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .form-element-html input[type=text], 
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .form-element-html input[type='email'] ,
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .fileupload-cover.field-cover .button-file, 
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .submit-cover.wide-true .submit-button
+{height: 48px;padding: 0 15px;font-size: 14px;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .fileupload-cover.field-cover .button-file {line-height: 44px;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .field-cover .formcraft-icon {margin: 9px;font-size: 22px;}
+
 }
 
-.onepress-menu-mobile-opening .c-bully {
-  z-index: 10;
+@media (max-width: 1140px) {
+
+body.home .site-header.no-scroll .onepress-menu>li>a {color: #232222;}
+
+.site-header .onepress-menu>li>a {font-size: 14px;}
+
+.site-header .onepress-menu.onepress-menu-mobile > li > a {padding: 10px 20px;}
+
+.site-header .onepress-menu>li>a:hover::after, .site-header .onepress-menu>li.current_page_item>a::after {display: none;visibility: hidden;opacity: 0;}
+
+.site-header .onepress-menu>li>a:hover, .site-header .onepress-menu>li.current_page_item>a {background-color:#4f8abf;color: #fff;}
+
+.footer-widgets .sidebar .widget .menu-main-container ul li {margin: 5px 15px;line-height: normal;}
+
 }
 
-.c-bully__bullet {
-  padding: 8px;
-  opacity: 0;
-  cursor: pointer;
-  position: relative;
-}
-@media screen and (max-width: 940px) {
-  .c-bully__bullet {
-    padding: 8px 3px;
-  }
-}
-.c-bully__bullet:hover .c-bully__title {
-  opacity: 1;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-}
-.c-bully__title {
-  position: absolute;
-  right: 26px;
-  top: 1px;
-  left: auto;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 1px 10px;
-  border-radius: 2px;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  display: block;
-  opacity: 0;
-  white-space: nowrap;
-  color: rgba(255, 255, 255, 0.8);
-  -webkit-transform: scale(0.6);
-      -ms-transform: scale(0.6);
-          transform: scale(0.6);
+
+@media (max-width: 991px) {
+
+.testimonials_outer.strong-view.modern .testimonial-content , .testimonials_outer.strong-view.modern .testimonial-name {font-size: 18px;}
+
+.testimonials_outer.strong-view.modern .testimonial-company {font-size: 16px;}
+
+.testimonials_outer.strong-view.modern .testimonial-inner {padding-top: 20px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element.form-element-field42 .form-element-html .heading-cover.field-cover span, .formcraft-css .form-cover form.fc-form.fc-form-22 .form-element.form-element-field47 .form-element-html .heading-cover.field-cover span 
+{font-size: 30px;margin: 8px 0 0 0;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .field-cover span.main-label {font-size: 16px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .checkbox-cover>div label ,
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .checkbox-cover>div label
+{font-size: 12px;line-height: normal;padding-left: 18px;margin-bottom: 10px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .form-element-html input[type=text] ,
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .field-cover input[type="email"] ,
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .form-element-html input[type=text], 
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .field-cover input[type="email"] ,
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .form-element-html input[type=text], 
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .form-element-html input[type="email"], 
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .field-cover textarea
+{height: 36px;margin: 0 0 15px 0;padding: 0 10px;color: #000;font-size: 13px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .field-cover textarea {height: 50px;padding-top: 8px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .form-element-html .field-cover .StripeElement, 
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .form-element-html .field-cover .stripe-builder-show 
+{height:36px;padding:6px 10px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .checkbox-cover>div label input[type="checkbox"] ,
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .checkbox-cover>div label input[type="radio"] ,
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .checkbox-cover>div label input[type="checkbox"] ,
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .checkbox-cover>div label input[type="radio"]
+{width: 13px;height: 13px;top: 3px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 {padding: 22px 20px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .field-cover .formcraft-icon ,
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .field-cover .formcraft-icon
+{margin: 7px;font-size: 16px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .fileupload-cover.field-cover .button-file ,
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .submit-cover.wide-true .submit-button ,
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .fileupload-cover.field-cover .button-file ,
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .submit-cover.wide-true .submit-button
+{padding: 0 20px;height: 38px;line-height: 38px;font-size: 14px;font-weight: 700;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .fileupload-cover.field-cover .button-file ,
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element .fileupload-cover.field-cover .button-file
+{line-height: 34px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-47 .form-element .fileupload-cover.field-cover .button-file .icon-upload-cloud 
+{font-size: 20px;top: 8px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 {padding: 25px;}
+
+#testimonials_page_outer .strong-view.default .testimonial {padding: 40px 20px;}
+
+#service_price_form .formcraft-css .form-cover form.fc-form.fc-form-22 {padding: 20px 15px; }
+
+#service_price_form .formcraft-css .form-cover form.fc-form.fc-form-22 .form-element.form-element-field42 .form-element-html .heading-cover.field-cover span, 
+#service_price_form .formcraft-css .form-cover form.fc-form.fc-form-22 .form-element.form-element-field47 .form-element-html .heading-cover.field-cover span
+{font-size: 26px;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .field-cover.heading-cover>div {font-size: 16px !important;margin-bottom: 15px;}
+
+.site-header .site-branding .site-logo-div img {width: 180px;}
+
+.site-header .site-branding .site-logo-div {line-height: normal;}
+
+.site-header {line-height: 72px;}
+
+.site-header .onepress-menu.onepress-menu-mobile {top: 63px;}
+
+.site-footer .footer-connect .follow-heading , .footer-widgets .sidebar .widget .menu-main-container ul li a {font-size: 16px;}
+
+.site-footer .footer-social a {font-size: 20px;}
+
+#testimonials_page_outer .testimonial-inner .testimonial-content {font-size: 15px;}
+
+.site-footer .site-info {font-size: 14px;}
+
+.site-footer .footer-widgets.section-padding {padding: 40px 0 25px;}
+
+.site-footer .footer-connect {padding-bottom: 30px;}
+
+.service_icon_section .tcb-col .tve_image_frame {text-align:center;}
+
+.service_icon_section .tcb-col .tve_image_frame img.tve_image {width: auto !important;height: auto !important;max-height: 68px;display: inline-block;margin: 0 auto;}
+
+.service_icon_section .thrv_wrapper.tve_image_caption {margin-bottom: 10px !important;}
+
+#tve_editor .service_icon_section h2 {font-size: 14px !important;}
+
 }
 
-.c-bully__bullet:after {
-  content: "";
-  display: block;
-  width: 12px;
-  height: 12px;
-  border: 2px solid currentColor;
-  border-radius: 50%;
-  will-change: transform;
-}
-@media screen and (max-width: 940px) {
-  .c-bully__bullet:after {
-    width: 9px;
-    height: 9px;
-  }
+
+@media (max-width: 767px) {
+
+.contact_info h3 {font-size: 20px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-6 {padding: 15px;}
+
+.contact_info i.contact_info_icon img {width: 38px;}
+
+.contact_info {padding-left: 55px;}
+
+.contact_info h3 {font-size: 18px;}
+
+.contact_info {margin: 10px 0;}
+
+.testimonials_outer.strong-view.modern .testimonial-content ,
+.testimonials_outer.strong-view.modern .testimonial-name {font-size: 16px;}
+
+.testimonials_outer.strong-view.modern .testimonial-company {font-size: 14px;}
+
+.testimonials_outer.strong-view.modern.controls-type-sides .testimonial-inner {padding-left: 20px;padding-right: 20px;}
+
+.testimonials_outer.strong-view.controls-type-sides:not(.rtl) .wpmslider-prev {left: -7px;}
+
+.testimonials_outer.strong-view.controls-type-sides:not(.rtl) .wpmslider-next {right: -7px;}
+
+#service_price_form .formcraft-css .form-cover form.fc-form.fc-form-22 .form-element.form-element-field42 .form-element-html .heading-cover.field-cover span, 
+#service_price_form .formcraft-css .form-cover form.fc-form.fc-form-22 .form-element.form-element-field47 .form-element-html .heading-cover.field-cover span 
+{font-size: 24px;}
+
+#service_price_form .formcraft-css .form-cover form.fc-form.fc-form-22 .form-element .field-cover span.main-label {font-size: 14px;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .form-element-html input[type=text], 
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .form-element-html input[type='email'], 
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .fileupload-cover.field-cover .button-file, 
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .submit-cover.wide-true .submit-button {height: 40px;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .fileupload-cover.field-cover .button-file {line-height: 38px;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .field-cover .formcraft-icon {margin: 8px;font-size: 18px;}
+
+.site-header .site-branding .site-logo-div img {width: 160px;}
+
+.site-header {line-height: 66px;}
+
+.site-header .onepress-menu.onepress-menu-mobile {top: 56px;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element.form-element-field42 .form-element-html .heading-cover.field-cover span, 
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element.form-element-field47 .form-element-html .heading-cover.field-cover span 
+{font-size: 22px;}
+
+#useful_links .tcb-flex-row .tcb-col::before ,
+#useful_links .tcb-flex-row .tcb-flex-col:last-child .tcb-col::after ,
+#useful_links::after
+{display: none;visibility: hidden;opacity: 0;}
+
+#useful_links h4, #tve_editor #useful_links [data-css="tve-u-165b38aa973"], 
+#tve_editor #useful_links [data-css="tve-u-165b38ab379"], 
+#tve_editor #useful_links [data-css="tve-u-165894e8a34"] {padding: 12px 15px;font-size: 16px !important;}
+
+#useful_links .tcb-flex-row .tcb-col {margin:2px 0; }
+
+#mobile_form_outer .formcraft-css .form-cover form.fc-form.fc-form-47 {margin: 0 auto;background: none !important;padding: 0;box-shadow: none;}
+
+#mobile_form_outer .formcraft-css .form-cover {text-align: center;}
+
+#useful_links {padding: 0;}
+
+.service_icon_section .tcb-flex-col {min-width: 25% !important;max-width: 25%  !important;width: 25%  !important;}
+
 }
 
-.c-bully__bullet--active {
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transition: top 0.2s ease-out;
-  transition: top 0.2s ease-out;
+@media (max-width: 639px) {
+
+#testimonials_page_outer .strong-content.strong-grid.columns-2 .testimonial {width: 100%;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element {max-width: 100%;padding: 0;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .field-cover.heading-cover>div {font-size: 14px !important;}
+
+#service_page_form2 .formcraft-css form.fc-form.fc-form-47 .form-element .submit-cover.wide-true .submit-button {margin-top: 8px;}
+
+#testimonials_page_outer .testimonial-inner .testimonial-content , .site-footer .footer-connect .follow-heading, 
+.footer-widgets .sidebar .widget .menu-main-container ul li a{font-size: 14px;}
+
+.site-footer .site-info {font-size: 12px;}
+
+.site-footer .site-info {padding: 20px 0;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-page-content {-webkit-column-count: 1;-moz-column-count: 1;column-count: 1;}
+
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-page .form-element-field16 {margin-bottom: 25px;}
+
+
 }
 
-.c-bully__bullet--active:before {
-  content: "";
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 14px;
-  background: currentColor;
-  border-radius: 50%;
-}
-@media screen and (max-width: 940px) {
-  .c-bully__bullet--active:before {
-    width: 9px;
-    height: 9px;
-  }
-}
 
-.c-bully__bullet--active:after {
-  border-color: transparent;
-}
+@media (max-width: 480px) {
 
-.c-bully__bullet--pop {
-  -webkit-animation: bully-pop 0.6s cubic-bezier(0.485, 1.63, 0.43, 2) forwards, fade-in 0.2s 0.2s ease-out forwards;
-          animation: bully-pop 0.6s cubic-bezier(0.485, 1.63, 0.43, 2) forwards, fade-in 0.2s 0.2s ease-out forwards;
-}
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element.form-element-field10 {padding-right:0;}
 
-.c-bully__bullet--squash {
-  opacity: 1;
-  -webkit-animation: bully-squash 0.2s ease-out forwards;
-          animation: bully-squash 0.2s ease-out forwards;
-}
+.formcraft-css .form-cover form.fc-form.fc-form-6 .form-element.form-element-field3 {padding-left: 0;margin-top: 5px;}
 
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+.testimonials_outer.strong-view.modern .testimonial-content ,
+.testimonials_outer.strong-view.modern .testimonial-name {font-size: 15px;}
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes bully-pop {
-  50% {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@keyframes bully-pop {
-  50% {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@-webkit-keyframes bully-squash {
-  50% {
-    -webkit-transform: scale(0.6, 1.8);
-            transform: scale(0.6, 1.8);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@keyframes bully-squash {
-  50% {
-    -webkit-transform: scale(0.6, 1.8);
-            transform: scale(0.6, 1.8);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-.single-post .content-inner {
-  margin-left: auto;
-  margin-right: auto;
-}
+.testimonials_outer.strong-view.modern .testimonial-company {font-size: 13px;}
 
-.entry-content > * {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-}
+#service_price_form  .formcraft-css .form-cover form.fc-form.fc-form-22 .form-page .form-element-field11 .checkbox-cover>div label ,
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-page .form-element-field11 .checkbox-cover>div label
+{min-width: 100%;width: 100%;max-width: 100%;}
 
-.no-sidebar .entry-content > .alignwide {
-  max-width: 100vw;
-  max-width: calc(var(--vw, 1vw) * 100);
-  width: 1110px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  left: 50%;
-  position: relative;
-}
-.no-sidebar .entry-content > .alignfull {
-  margin: 1.5em 0;
-  max-width: 100vw;
-  max-width: calc(var(--vw, 1vw) * 100);
-  width: 100vw;
-  /* Use vh as a fallback for browsers that do not support Custom Properties */
-  width: calc(var(--vw, 1vw) * 100);
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  left: 50%;
-  position: relative;
-}
+#service_price_form .formcraft-css .form-cover form.fc-form.fc-form-22 .form-element.form-element-field42 .form-element-html .heading-cover.field-cover span, 
+#service_price_form .formcraft-css .form-cover form.fc-form.fc-form-22 .form-element.form-element-field47 .form-element-html .heading-cover.field-cover span 
+{font-size: 22px;}
 
-.single-post .right-sidebar .content-inner {
-  margin-left: 0px;
-}
+#useful_links h4, #tve_editor #useful_links [data-css="tve-u-165b38aa973"], #tve_editor #useful_links [data-css="tve-u-165b38ab379"], #tve_editor #useful_links [data-css="tve-u-165894e8a34"] {font-size: 14px !important;}
 
-.single-post .left-sidebar .content-inner {
-  margin-right: 0px;
-}
+#service_page_form2 .formcraft-css .form-cover form.fc-form.fc-form-47 .form-page-content .form-element-type-customText, 
+#service_page_form2 .formcraft-css .form-cover form.fc-form.fc-form-47 .form-page-content .form-element-type-heading {top:0;}
 
-.entry-content ul,
-.entry-content ol {
-  margin: 1.5em auto;
-  list-style-position: outside;
-}
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element.form-element-field48 {padding: 0 0 10px 0;}
 
-.wp-block-video video {
-  max-width: 100%;
-}
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element.form-element-field11 {margin-bottom: 0;}
 
-.wp-block-embed.is-type-video .wp-block-embed__wrapper {
-  width: 100%;
-  position: relative;
-  padding: 0 0 0 0;
-  height: auto;
-  display: block;
-}
-.wp-block-embed.is-type-video .wp-block-embed__wrapper::before {
-  padding-top: 56.25%;
-  content: "";
-  display: block;
-}
-.wp-block-embed.is-type-video .wp-block-embed__wrapper > iframe, .wp-block-embed.is-type-video .wp-block-embed__wrapper > object {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
+.formcraft-css .form-cover form.fc-form.fc-form-22 .form-element.form-element-field48 .sub-label-false {display: none;visibility: hidden;opacity: 0;height: 0;}
 
-.wp-block-image img {
-  display: block;
-}
-
-.wp-block-image.alignleft,
-.wp-block-image.alignright {
-  width: 100%;
-}
-
-.wp-block-image.alignfull img {
-  width: 100vw;
-  width: calc(var(--vw, 1vw) * 100);
-}
-
-.wp-block-gallery:not(.components-placeholder) {
-  margin: 1.5em auto;
-}
-
-.wp-block-cover-text p {
-  padding: 1.5em 14px;
-}
-
-ul.wp-block-latest-posts.alignwide,
-ul.wp-block-latest-posts.alignfull,
-ul.wp-block-latest-posts.is-grid.alignwide,
-ul.wp-block-latest-posts.is-grid.alignwide {
-  padding: 0 14px;
-}
-
-.wp-block-table {
-  display: block;
-  overflow-x: auto;
-}
-
-.wp-block-table table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.wp-block-table td,
-.wp-block-table th {
-  padding: 0.5em;
-}
-
-.entry-content li {
-  margin-left: 2.5em;
-  margin-bottom: 6px;
-}
-
-.entry-content ul ul,
-.entry-content ol ol,
-.entry-content ul ol,
-.entry-content ol ul {
-  margin: 0 auto;
-}
-
-.entry-content ul ul li,
-.entry-content ol ol li,
-.entry-content ul ol li,
-.entry-content ol ul li {
-  margin-left: 0;
-}
-
-.wp-block-quote {
-  border-left-width: 4px;
-  border-left-color: currentColor;
-}
-.wp-block-quote.is-style-large {
-  padding: 0px;
-}
-.wp-block-quote.is-style-large cite {
-  font-size: 13px;
-}
-.wp-block-quote > * {
-  margin-left: 16px;
-  margin-right: 16px;
-}
-.wp-block-quote cite {
-  font-style: normal;
-  margin-top: 1em;
-  margin-left: 0px;
-  position: relative;
-  font-size: 13px;
-  display: block;
-  margin-bottom: 0px;
-}
-
-.wp-block-pullquote {
-  border-bottom: 4px solid currentColor;
-  border-top: 4px solid currentColor;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  padding: 3em 0;
-  text-align: center;
-}
-.wp-block-pullquote.is-style-solid-color {
-  border-bottom: 0 none;
-  border-top: 0 none;
-}
-.wp-block-pullquote > p:first-child {
-  margin-top: 0;
-}
-.wp-block-pullquote cite {
-  font-size: 13px;
-  font-style: normal;
-  text-transform: uppercase;
-}
-.wp-block-pullquote blockquote {
-  border-left: 0px;
-  background: none;
-}
-
-.wp-block-separator {
-  margin: 3em auto;
-  border: none;
-  border-bottom: 2px solid currentColor;
-}
-.wp-block-separator:not(.is-style-wide) {
-  max-width: 100px;
-}
-.wp-block-separator.is-style-dots {
-  border-bottom: none !important;
-  text-align: center;
-}
-.wp-block-separator.is-style-dots::before {
-  padding-left: 0px;
-  font-size: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .wp-block-cover-text p {
-    padding: 1.5em 0;
-  }
-
-  .entry-content > * {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-/*--------------------------------------------------------------
-  # Block Color Palette Colors
-  --------------------------------------------------------------*/
-.has-strong-blue-color {
-  color: #0073aa;
-}
-
-.has-strong-blue-background-color {
-  background-color: #0073aa;
-}
-
-.has-lighter-blue-color {
-  color: #229fd8;
-}
-
-.has-lighter-blue-background-color {
-  background-color: #229fd8;
-}
-
-.has-very-light-gray-color {
-  color: #eee;
-}
-
-.has-very-light-gray-background-color {
-  background-color: #eee;
-}
-
-.has-very-dark-gray-color {
-  color: #444;
-}
-
-.has-very-dark-gray-background-color {
-  background-color: #444;
 }
